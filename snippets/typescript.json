@@ -1,0 +1,27 @@
+{
+	"Print to one": {
+		"prefix": "one",
+		"body": [
+			"import {",
+				"  Controller,",
+				"  Service,",
+				"  Get,",
+				"  convertService,",
+				"  autoCheckList,",
+				"  QueryParam",
+				"} from 'te-one';",
+				"import baseClass from '../../common/baseClass'",
+				"const service = convertService(Service)",
+				"@Controller()",
+				"@autoCheckList",
+				"export class Test extends baseClass {",
+				"  @Get('/getIdAndInvoice')",
+				"  async getIdAndInvoice(@QueryParam('unionId') unionId: string = '475485') {",
+				"    this.log('getIdAndInvoice :: enter');",
+				"    return unionId;",
+				"  }",
+				"}"
+		],
+		"description": "Log output to one"
+	}
+}

@@ -1,0 +1,38 @@
+{
+    "import": {
+        "prefix": "import",
+        "body": [
+            "import $1 from '$2'"
+        ],
+        "description": "import ... from ..."
+    },
+    "two": {
+		"prefix": "two",
+		"body": [
+			"import {",
+			"  api,",
+			"  BasePage,",
+			"  BaseComponent,",
+			"  Component,",
+			"  createComponent",
+			"} from '../../lib/core/index'",
+			"",
+			"class $1 extends BasePage {",
+			"  constructor(){",
+			"    super()",
+			"  }",
+			"  data = {",
+			"  }",
+			"  onLoad(options) {",
+			"",
+			"  }",
+			"  onShow(){",
+			"    console.log(this.options)",
+			"  }",
+			"}",
+			"",
+			"Component(createComponent(new $1()))"
+		],
+		"description": "Log output to two"
+	}
+}

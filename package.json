@@ -1,0 +1,47 @@
+{
+    "name": "one-snippets",
+    "displayName": "one Snippets",
+    "author": "bxj",
+    "publisher": "hollowtree",
+    "icon": "img/ONE-logo-DIY-L_white_circle_black_text1.jpg",
+    "description": "A one.js Extension",
+    "license": "MIT",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "keywords": [
+        "javascript",
+        "snippet",
+        "one",
+        "two"
+    ],
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1140571314/vs-code-snippets.git"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}
